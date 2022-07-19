@@ -1,0 +1,8 @@
+<app-block-header title="Category" (viewMoreCallback)="viewAll()"></app-block-header>
+<ion-grid class="ion-no-padding">
+  <ion-row>
+    <ion-col size="4" *ngFor="let m of menus" class="blk">
+      <app-category-card [count]="m.count" [icon]="m.icon" [name]="m.name"></app-category-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

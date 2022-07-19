@@ -1,0 +1,33 @@
+.type-1 {
+  &.mn {
+    border: 1px solid var(--brd-line-clr);
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+
+    .icn-blk {
+      ion-icon {
+        font-size: 25px;
+      }
+    }
+
+    .name {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 5px 0px;
+      text-overflow: ellipsis;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .count {
+      font-size: 11px;
+      color: #9095A8;
+      text-overflow: ellipsis;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}

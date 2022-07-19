@@ -1,0 +1,51 @@
+.lyt {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  ion-icon {
+    font-size: 21px;
+    vertical-align: middle;
+  }
+
+  .txt {
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .desc {
+    display: block;
+    font-size: 12px;
+    color: gray;
+    margin: 10px 0px;
+
+    .email {
+      color: black;
+      font-weight: 500;
+    }
+  }
+}
+
+.verify-btn {
+  margin: 15px 0px;
+  --box-shadow: none;
+  height: 45px;
+}
+
+
+.navs {
+  margin-bottom: 5px;
+
+  .lbl {
+    font-size: 14px;
+    color: gray;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}

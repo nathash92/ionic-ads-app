@@ -1,0 +1,13 @@
+.blk {
+  padding-right: 10px;
+  margin-bottom: 10px;
+
+  &:nth-child(3n) {
+    padding-right: 0px;
+  }
+}
+
+app-block-header {
+  display: block;
+  margin-bottom: 10px;
+}

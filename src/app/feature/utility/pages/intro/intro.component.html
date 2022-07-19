@@ -1,0 +1,45 @@
+<ion-content class="ion-padding">
+  <div class="h-100">
+    <ion-slides #sld [options]="slideOptions" (ionSlideDidChange)="onSlideChange()">
+      <ion-slide *ngFor="let i of slideData">
+        <ion-label>
+          <div class="ion-text-center">
+            <div class="img">
+              <div class="inner">
+                <ion-icon name="{{i.icon}}"></ion-icon>
+              </div>
+            </div>
+            <div class="title">
+              Lipsum generator: Lorem Ipsum
+            </div>
+            <div class="subtitle">
+              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+              designs. The passage is attributed to an unknown
+            </div>
+          </div>
+        </ion-label>
+      </ion-slide>
+    </ion-slides>
+    <ion-grid class="action-btn-blk">
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" class="bg-l-grey clr-black" (click)="skip()">
+            Skip
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="nextSld()">
+            <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+            Next
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <div class="bullets" *ngFor="let i of slideData; let index = index;"
+            [ngClass]="{'active': activeSldIndex == index}"></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

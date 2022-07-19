@@ -1,0 +1,69 @@
+<ion-content class="ion-padding">
+
+  <div class="lyt">
+    <div>
+      <div class="heading">
+        <ion-icon name="person-circle-outline" color="primary"></ion-icon>
+        <span class="txt">
+          Sign Up
+        </span>
+        <span class="desc">
+          Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+        </span>
+      </div>
+
+      <form class="frm-brd-inp">
+        <ion-list>
+
+          <ion-item class="inp">
+            <ion-label position="floating">
+              Full Name
+            </ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item class="inp">
+            <ion-label position="floating">
+              Email address
+            </ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item>
+
+          <ion-item class="inp">
+            <ion-label position="floating">
+              Password
+            </ion-label>
+            <ion-input type="password"></ion-input>            
+          </ion-item>
+
+          <ion-item class="inp">
+            <ion-label position="floating">
+              Confirm Password
+            </ion-label>
+            <ion-input type="{{showPwd?'text':'password'}}"></ion-input>
+            <ion-icon name="{{showPwd?'eye-off-outline':'eye-outline'}}" (click)="togglePwd()" class="pwd-eye"
+              slot="end"></ion-icon>
+          </ion-item>
+
+        </ion-list>
+
+        <ion-button expand="block" class="sign-in-btn ion-text-capitalize">
+          Sign Up
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </ion-button>
+
+        <div class="navs">
+          <span class="lbl">Already have an account? </span>
+          <span class="link" (click)="gotoSignIn()">Sign In</span>
+        </div>
+
+        <div class="navs">
+          <span class="lbl">Skip sign in? </span>
+          <span class="link" (click)="gotoHome()">Go to home</span>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</ion-content>
