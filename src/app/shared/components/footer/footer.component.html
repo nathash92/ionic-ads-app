@@ -1,0 +1,10 @@
+<ion-grid class="tab-blk">
+  <ion-row class="ion-align-items-center">
+    <ion-col *ngFor="let t of tabs" class="ion-text-center">
+      <div (click)="onTabClick(t)" [ngClass]="{'active': activeTab.key == t.key}">
+        <ion-icon class="tab-icn" name="{{activeTab.key == t.key?t.active:t.icn}}" [ngClass]="{'add-btn': t.key == 'add'}"></ion-icon>
+        <div class="tab-lbl">{{t.lbl}}</div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

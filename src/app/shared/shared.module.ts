@@ -10,6 +10,7 @@ import { FilterModalComponent } from './modals/filter-modal/filter-modal.compone
 import { IonicModule } from '@ionic/angular';
 import { ViewAllLinkComponent } from './components/view-all-link/view-all-link.component';
 import { BlockHeaderComponent } from './components/block-header/block-header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -23,7 +24,8 @@ import { BlockHeaderComponent } from './components/block-header/block-header.com
     SortModalComponent,
     FilterModalComponent,
     ViewAllLinkComponent,
-    BlockHeaderComponent
+    BlockHeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +39,8 @@ import { BlockHeaderComponent } from './components/block-header/block-header.com
     SortModalComponent,
     FilterModalComponent,
     ViewAllLinkComponent,
-    BlockHeaderComponent
+    BlockHeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

@@ -79,3 +79,26 @@
   margin-top: 180px;
   padding: 0px 20px;
 }
+
+app-category-grid {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.ads {
+  padding: 0px;
+
+  ion-row,
+  ion-col {
+    padding: 0px;
+  }
+
+  .blk {
+    padding-right: 15px;
+    margin-bottom: 15px;
+
+    &:nth-child(2n) {
+      padding-right: 0px;
+    }
+  }
+}

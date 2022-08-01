@@ -1,1 +1,18 @@
-<p>ad-card works!</p>
+<ng-container *ngIf="template == 1">
+  <div class="mn type-1">
+    <div class="img" [ngStyle]="bgImg"></div>
+    <div class="name">
+      Lorem ipsum, or lipsum as
+    </div>
+    <div class="loc-blk">
+      <ion-icon class="loc-icn" name="location-outline"></ion-icon>
+      <span class="loc-name">Vijaynagar, Bengalore</span>
+    </div>
+    <div class="price-blk">
+      <div class="price">
+        Rs.10,00,000
+      </div>
+    </div>
+
+  </div>
+</ng-container>

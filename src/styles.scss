@@ -1,5 +1,6 @@
 :root {
   --brd-line-clr: #EBEEF7;
+  --clr-grey: #858484;
 
   * {
     --ion-font-family: 'Nunito Sans';
@@ -20,6 +21,10 @@
   color: black;
 }
 
+.clr-grey {
+  color: var(--clr-grey);
+}
+
 
 .frm-brd-inp {
   .inp {
@@ -31,5 +36,12 @@
     ion-label {
       color: #ADB3BF;
     }
+  }
+}
+
+app-block-header {
+  &.b-spacer {
+    display: block;
+    margin-bottom: 10px;
   }
 }

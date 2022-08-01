@@ -1,0 +1,26 @@
+.tab-blk {
+  padding: 0px;
+
+  .active {
+
+    .tab-icn,
+    .tab-lbl {
+      color: var(--ion-color-primary);
+    }
+  }
+
+  .tab-icn {
+    font-size: 24px;
+    color: var(--clr-grey);
+  }
+
+  .tab-lbl {
+    font-size: 12px;
+    color: var(--clr-grey);
+  }
+
+  .add-btn {
+    font-size: 50px;
+    color: var(--ion-color-primary);
+  }
+}

@@ -3,7 +3,7 @@
     <ion-col>
       <div class="hdr">{{title}}</div>
     </ion-col>
-    <ion-col size="auto">
+    <ion-col size="auto" *ngIf="showViewMore">
       <app-view-all-link ></app-view-all-link>
     </ion-col>
   </ion-row>
