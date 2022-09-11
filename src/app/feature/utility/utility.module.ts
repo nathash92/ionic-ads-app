@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { UtilityRoutingModule } from './utility-routing.module';
-import { SlpashComponent } from './pages/slpash/slpash.component';
 import { IonicModule } from '@ionic/angular';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { IntroComponent } from './pages/intro/intro.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
+import { SlpashComponent } from './pages/slpash/slpash.component';
+import { UtilityRoutingModule } from './utility-routing.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NotificationsComponent } from './pages/notifications/notifications.comp
   imports: [
     CommonModule,
     UtilityRoutingModule,
-    IonicModule
+    IonicModule,
+    SharedModule,
   ],
   exports: [
     NotificationsComponent

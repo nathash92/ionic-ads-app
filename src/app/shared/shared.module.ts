@@ -32,6 +32,7 @@ import { FooterComponent } from './components/footer/footer.component';
     IonicModule
   ],
   exports: [
+    HeaderComponent,
     CategoryCardComponent,
     CategoryGridComponent,
     AdCardComponent,

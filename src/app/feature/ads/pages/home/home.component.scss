@@ -1,5 +1,5 @@
 .hdr {
-  --background: #192033;
+  --background: #00796b;
 
   .icn {
     vertical-align: middle;
@@ -18,7 +18,7 @@
 
 .bnr {
   height: 245px;
-  background: #192033;
+  background: #00796b;
 
   .title {
     text-align: center;
@@ -85,7 +85,7 @@ app-category-grid {
   margin-bottom: 15px;
 }
 
-.ads {
+.ads-blk {
   padding: 0px;
 
   ion-row,
@@ -93,12 +93,20 @@ app-category-grid {
     padding: 0px;
   }
 
-  .blk {
+  .ads-blk-inner {
     padding-right: 15px;
     margin-bottom: 15px;
 
     &:nth-child(2n) {
       padding-right: 0px;
     }
+  }
+
+  .view-all-btn {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--ion-color-primary);
+    --background: var(--bg-l-1);
+    --box-shadow: none;    
   }
 }

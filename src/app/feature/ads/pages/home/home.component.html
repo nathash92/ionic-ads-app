@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar class="hdr">
     <ion-buttons slot="end">
-      <ion-button color="light">
+      <ion-button color="light" (click)="viewNotification()">
         <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -13,6 +13,7 @@
 </ion-header>
 <ion-content>
 
+  <!-- BROWSE UI START -->
   <div class="bnr">
 
     <div class="title">
@@ -37,7 +38,7 @@
               <ion-icon name="location-outline" class="s-icn" slot="start"></ion-icon>
             </ion-item>
 
-            <ion-item>
+            <ion-item (click)="openCategoryModal()">
               <ion-input placeholder="Choose Category" [readonly]="true"></ion-input>
               <ion-icon name="receipt-outline" class="s-icn" slot="start"></ion-icon>
               <ion-icon name="chevron-down-outline" class="e-icn" slot="end"></ion-icon>
@@ -56,21 +57,35 @@
     <!-- SEARCH FORM END -->
 
   </div>
+  <!-- BROWSE UI END -->
 
   <div class="cnt">
 
+    <!-- CATEGORIES -->
     <app-category-grid></app-category-grid>
 
-    <div>
+    <!-- POPULAR ADS START -->
+    <div class="ads-blk">
+      
       <app-block-header class="b-spacer" title="Popular Ads" [showViewMore]="false"></app-block-header>
-      <ion-grid class="ads">
+      
+      <ion-grid>
         <ion-row>
-          <ion-col size="6" *ngFor="let i of [{i:'1'},{i:'2'},{i:'3'},{i:'1'},{i:'2'},{i:'3'}]" class="blk">
+          <ion-col size="6" *ngFor="let i of [{i:'1'},{i:'2'},{i:'3'},{i:'1'},{i:'2'},{i:'3'}]" class="ads-blk-inner">
             <app-ad-card [img]="i.i"></app-ad-card>
           </ion-col>
         </ion-row>
       </ion-grid>
+
+      <!-- VIEW ALL -->
+      <div class="ion-text-center ion-padding mb-3">
+        <ion-button class="view-all-btn">
+          View All <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </ion-button>
+      </div>
+
     </div>
+    <!-- POPULAR ADS END -->
 
   </div>
 </ion-content>

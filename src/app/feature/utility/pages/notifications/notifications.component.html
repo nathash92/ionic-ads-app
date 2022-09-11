@@ -1,1 +1,34 @@
-<p>notifications works!</p>
+<ion-header>
+  <app-header title="Notifications"></app-header>
+</ion-header>
+<ion-content class="page-padding">
+
+  <!-- HEADER -->
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <div class="font-semibold text-lg">Notifications</div>
+      </ion-col>
+      <ion-col size="auto">
+        <div class="text-gray-500 text-sm">Mark as Read</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- NOTIFICATIONS -->
+  <ion-grid *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]" class="mb-1">
+    <ion-row>
+      <ion-col size="auto">
+        <span class="notification-icn">
+          <ion-icon name="checkmark-outline"></ion-icon>
+        </span>
+      </ion-col>
+      <ion-col>
+        <div class="text-sm">
+          Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
